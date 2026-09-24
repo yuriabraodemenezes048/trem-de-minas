@@ -70,19 +70,16 @@ export function Header() {
           className="flex size-11 items-center justify-center rounded-full text-cream lg:hidden"
           aria-label={open ? "Fechar menu" : "Abrir menu"}
           aria-expanded={open}
-          aria-controls="menu-mobile"
           onClick={() => setOpen((v) => !v)}
         >
           {open ? <X size={26} /> : <Menu size={26} />}
         </button>
       </div>
 
+      {open && (
       <div
         id="menu-mobile"
-        className={cn(
-          "grain grain-dark fixed inset-x-0 top-16 bottom-0 overflow-y-auto bg-green-deep transition-all duration-500 lg:hidden",
-          open ? "visible opacity-100" : "invisible opacity-0",
-        )}
+        className="fixed inset-x-0 bottom-0 top-16 overflow-y-auto bg-green-deep lg:hidden"
       >
         <nav aria-label="Menu mobile" className="flex min-h-full flex-col px-6 pb-10 pt-6">
           <ul>
@@ -114,6 +111,7 @@ export function Header() {
           </div>
         </nav>
       </div>
+      )}
     </header>
   );
 }
