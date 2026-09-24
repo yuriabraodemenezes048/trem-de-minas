@@ -1,0 +1,15 @@
+node_modules
+.next
+out
+build
+.env
+.env*.local
+.vercel
+*.tsbuildinfo
+next-env.d.ts
+npm-debug.log*
+.DS_Store
+Thumbs.db
+# Materiais-fonte originais (o site usa as versões em /public)
+/*.mp4
+/logo trem.jpg

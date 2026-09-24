@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-serif: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-sans: var(--font-manrope), system-ui, sans-serif;
+
+  --color-green: #006636;
+  --color-green-deep: #06301f;
+  --color-cream: #f5f0e7;
+  --color-cream-dark: #eae1d0;
+  --color-wood: #4a3022;
+  --color-ocre: #a06c19;
+  --color-ocre-dark: #85560f;
+  --color-ocre-light: #d9a44a;
+  --color-coal: #171714;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-coal);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-ocre);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+::selection { background: var(--color-green); color: var(--color-cream); }
+
+/* Textura de papel muito leve, sem imagem externa */
+.grain { position: relative; isolation: isolate; }
+.grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.35;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.29 0 0 0 0 0.19 0 0 0 0 0.13 0 0 0 0.09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.grain-dark::before { mix-blend-mode: screen; opacity: 0.5; }
+
+/* Sublinhado animado */
+.link-underline {
+  background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat;
+  transition: background-size 0.35s ease;
+}
+.link-underline:hover, .link-underline:focus-visible { background-size: 100% 1px; }
+
+/* Linha tracejada de bilhete */
+.ticket-line {
+  background-image: linear-gradient(to right, currentColor 50%, transparent 50%);
+  background-size: 10px 1px;
+  background-repeat: repeat-x;
+  height: 1px;
+  opacity: 0.35;
+}
