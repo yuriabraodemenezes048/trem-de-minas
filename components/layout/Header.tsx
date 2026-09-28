@@ -32,6 +32,7 @@ export function Header() {
   const solid = scrolled || open;
 
   return (
+    <>
     <header
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-500",
@@ -75,11 +76,13 @@ export function Header() {
           {open ? <X size={26} /> : <Menu size={26} />}
         </button>
       </div>
+    </header>
 
+      {/* Fora do <header>: backdrop-filter cria containing block e faria o fixed colapsar em 64px. */}
       {open && (
       <div
         id="menu-mobile"
-        className="fixed inset-x-0 bottom-0 top-16 overflow-y-auto bg-green-deep lg:hidden"
+        className="fixed inset-x-0 bottom-0 top-16 z-[45] overflow-y-auto bg-green-deep lg:hidden"
       >
         <nav aria-label="Menu mobile" className="flex min-h-full flex-col px-6 pb-10 pt-6">
           <ul>
@@ -112,6 +115,6 @@ export function Header() {
         </nav>
       </div>
       )}
-    </header>
+    </>
   );
 }
