@@ -18,24 +18,6 @@ const negative =
   "illustration, cartoon, 3D render, extra fingers, deformed hands, deformed food, glossy fake food, plastic look, surreal lighting, unrealistic faces, overprocessed, oversaturated, stock photo look, text, watermark, logo";
 
 export const aiSlots = {
-  comidaBuffet: {
-    file: "comida-buffet-mineiro.webp",
-    width: 1600,
-    height: 1067,
-    alt: "Buffet de comida mineira em panelas de barro e ferro sobre balcão de madeira",
-    prompt:
-      "Authentic Brazilian Minas Gerais buffet in a rustic colonial farmhouse restaurant in Florianópolis, clay and cast-iron pots with feijão tropeiro, tutu, couve refogada, frango com quiabo and rice, wooden counter, brick wall, warm natural window light, documentary food photography, 35mm, shallow depth of field, believable textures, slightly imperfect real food styling, premium but authentic, no exaggeration, landscape 3:2",
-    negative,
-  },
-  comidaPrato: {
-    file: "comida-prato-mineiro.webp",
-    width: 1200,
-    height: 1200,
-    alt: "Prato servido com comida mineira sobre mesa de madeira",
-    prompt:
-      "Close-up of a home-style plate of traditional Minas Gerais food (rice, beans, couve, pork, farofa, cassava) on a worn wooden table in a rustic Brazilian restaurant, side window light, warm tones, hyper realistic food photography, not commercial stock, natural imperfections, slight steam, 50mm, shallow depth of field, square 1:1",
-    negative,
-  },
   fazendaAnimais: {
     file: "fazendinha-animais.webp",
     width: 1600,

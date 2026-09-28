@@ -39,13 +39,13 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     title: siteConfig.seo.title,
     description: siteConfig.seo.description,
-    images: [{ url: "/images/casa-janelas.jpg", width: 720, height: 640, alt: siteConfig.tagline }],
+    images: [{ url: "/images/fachada-casarao.jpg", width: 1206, height: 895, alt: siteConfig.tagline }],
   },
   twitter: {
     card: "summary_large_image",
     title: siteConfig.seo.title,
     description: siteConfig.seo.description,
-    images: ["/images/casa-janelas.jpg"],
+    images: ["/images/fachada-casarao.jpg"],
   },
   robots: { index: true, follow: true },
 };

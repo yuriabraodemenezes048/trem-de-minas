@@ -2,7 +2,6 @@ import { Star } from "lucide-react";
 import { images, siteConfig } from "@/data/site";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
-import { LoopVideo } from "@/components/ui/LoopVideo";
 import { Photo } from "@/components/ui/Photo";
 import { WhatsAppIcon } from "@/components/ui/icons";
 
@@ -45,13 +44,12 @@ export function Hero() {
         <div className="relative lg:col-span-6 lg:col-start-7 lg:mt-4">
           <div className="relative mx-auto max-w-[36rem] lg:mr-0 lg:max-w-[38rem]">
             <Photo
-              image={images.fachada}
+              image={images.fachadaCasarao}
               sizes="(min-width: 1024px) 608px, 92vw"
               priority
               className="aspect-[4/4.6] rounded-b-2xl rounded-t-[999px] border border-cream/20 sm:aspect-[4/4.4]"
-            >
-              <LoopVideo preload="metadata" src="/videos/hero-reel.mp4" poster={images.fachada.src} />
-            </Photo>
+              imgClassName="object-[62%_50%]"
+            />
             <div className="absolute -bottom-5 left-4 rounded-xl bg-cream px-5 py-3 text-wood shadow-xl sm:-left-6">
               <p className="font-serif text-2xl font-semibold leading-none text-green-deep">+140 anos</p>
               <p className="mt-1 text-xs font-semibold uppercase tracking-widest text-ocre-dark">de casarão e histórias</p>

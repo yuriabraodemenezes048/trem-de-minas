@@ -16,6 +16,7 @@
 }
 
 html {
+  background-color: var(--color-cream);
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
 }

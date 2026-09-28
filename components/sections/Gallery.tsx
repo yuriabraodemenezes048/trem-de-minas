@@ -8,15 +8,14 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { InstagramIcon } from "@/components/ui/icons";
 
 const gallery = [
-  images.buffet,
   images.jardim,
-  images.bananas,
-  images.janela,
+  images.sobremesas,
+  images.salaAmarela,
   images.gramado,
-  images.telefone,
   images.geleias,
-  images.mata,
-  images.moedor,
+  images.bananas,
+  images.porta,
+  images.buffetBarro,
 ];
 
 export function Gallery() {

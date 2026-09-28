@@ -104,7 +104,6 @@ const img = (name: string, width: number, height: number, alt: string): SiteImag
 
 /** Todas as imagens usadas no site. Troque os arquivos em /public/images mantendo os nomes. */
 export const images = {
-  fachada: img("casa-janelas", 720, 640, "Fachada branca do casarão com janelas de venezianas verdes e jardineiras de flores"),
   jardim: img("casa-jardim", 720, 480, "Jardineiras com plantas sob as janelas do casarão, ao lado do gramado"),
   salao: img("salao-mesas", 720, 500, "Salão do restaurante com mesas de madeira, porta aberta e armário antigo amarelo"),
   telefone: img("telefone", 720, 500, "Detalhe de um telefone antigo de disco, decoração do casarão"),
@@ -112,7 +111,10 @@ export const images = {
   cozinha: img("cozinha", 720, 640, "Equipe trabalhando no buffet, sob o telhado de madeira do salão"),
   janela: img("janela-verde", 720, 640, "Janela com veneziana verde e vista para o campo, ao lado de uma mesa de madeira"),
   teto: img("balcao-teto", 720, 640, "Teto de telhas em formato circular sobre o salão do restaurante"),
-  buffet: img("buffet", 720, 360, "Pessoas se servindo no buffet, com panelas de barro sobre o balcão"),
+  fachadaCasarao: img("fachada-casarao", 1206, 895, "Fachada histórica do Trem de Minas Ribeirão, casarão branco com portas e janelas verdes cercado de natureza"),
+  buffetPanelas: img("buffet-panelas", 1206, 895, "Panelas de ferro com pratos da culinária mineira no buffet do Trem de Minas"),
+  buffetBarro: img("buffet-barro", 1206, 1203, "Buffet de comida mineira servido em panelas de barro, com o salão do restaurante ao fundo"),
+  sobremesas: img("sobremesas", 936, 1664, "Buffet de sobremesas do Trem de Minas Ribeirão, com pudim, tortas e bolos"),
   geleias: img("balcao-geleias", 720, 480, "Balcão de tijolinhos com potes de geleias e conservas"),
   fogao: img("fogao", 720, 640, "Fogão a lenha de tijolinhos no salão do Trem de Minas"),
   bananas: img("bananas", 720, 640, "Cacho de bananas pendurado sob o telhado de madeira"),

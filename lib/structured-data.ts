@@ -8,7 +8,7 @@ export function restaurantJsonLd() {
     name: siteConfig.name,
     description: siteConfig.seo.description,
     url: baseUrl,
-    image: `${baseUrl}/images/casa-janelas.jpg`,
+    image: `${baseUrl}/images/fachada-casarao.jpg`,
     telephone: siteConfig.phone.tel,
     servesCuisine: "Culinária Mineira",
     address: {

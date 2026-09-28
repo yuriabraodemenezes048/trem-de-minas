@@ -31,13 +31,13 @@ As fotos atuais foram recortadas de frames do vídeo institucional (720px de lar
 3. Opcional: defina `NEXT_PUBLIC_SITE_URL` com o domínio oficial (veja `.env.example`). Sem ela, canonical, sitemap e Open Graph usam a URL de produção da Vercel (`VERCEL_PROJECT_PRODUCTION_URL`) ou `http://localhost:3000` em desenvolvimento; nenhum domínio é inventado.
 
 ## Vídeos
-`public/videos/` traz 4 trechos curtos (sem áudio, ~100–300 KB cada) recortados do vídeo institucional, sem as legendas: `hero-reel.mp4` (hero), `buffet.mp4` (Gastronomia), `gramado.mp4` (Fazendinha) e `cta.mp4` (CTA final).
+`public/videos/` traz 2 trechos curtos (sem áudio, ~100–300 KB cada) recortados do vídeo institucional, sem as legendas: `gramado.mp4` (Fazendinha) e `cta.mp4` (CTA final).
 O componente `LoopVideo` toca só quando visível, usa a foto como poster e não carrega com `prefers-reduced-motion` ou economia de dados.
 Para trocar, substitua os arquivos mantendo os nomes (H.264, sem áudio, `+faststart`).
 
 ## Imagens de apoio por IA (opcional)
 Não há imagens de IA no repositório. Os slots estão em [`data/ai-images.ts`](data/ai-images.ts), com prompt e negative prompt prontos para cada um:
-`comidaBuffet`, `comidaPrato` (Gastronomia), `fazendaAnimais` (Fazendinha), `fazendaCrianca` e `ambiente` (Galeria).
+`fazendaAnimais` (Fazendinha), `fazendaCrianca` e `ambiente` (Galeria).
 Gere a imagem, salve em `public/images/ai/` com o nome indicado no slot (recomendado WebP, ~1600px) e ela entra sozinha no próximo build; sem o arquivo, o site usa a foto real.
 Use com moderação e, se possível, identifique como ilustrativas.
 
